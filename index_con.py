@@ -16,5 +16,10 @@ index_cons_h30007 = pd.read_excel(index_cons_dir + 'h30007cons.xls') # 信息产
 index_cons_h30597 = pd.read_excel(index_cons_dir + 'h30597cons.xls') # 新材料
 index_cons_h30590 = pd.read_excel(index_cons_dir + 'h30590cons.xls') # 机器人
 
-index_cons_h30590 = index_cons_h30590['成分券代码\nConstituent Code']
-print(index_cons_h30590)
+# index_cons_h30590 = index_cons_h30590['成分券代码\nConstituent Code']
+# print(index_cons_h30590)
+
+index_cons_000964 = index_cons_000964['成分券代码\nConstituent Code']
+print(index_cons_000964)
+
+
