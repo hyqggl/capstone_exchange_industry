@@ -20,6 +20,10 @@ index_cons_h30590 = pd.read_excel(index_cons_dir + 'h30590cons.xls') # 机器人
 # print(index_cons_h30590)
 
 index_cons_000964 = index_cons_000964['成分券代码\nConstituent Code']
-print(index_cons_000964)
+# print(index_cons_000964)
+
+all_stock_basic = ts.get_stock_basics()
+print(all_stock_basic)
+# basic_000964 = all_stock_basic[]
 
 
