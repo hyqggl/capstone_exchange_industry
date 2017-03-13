@@ -19,11 +19,17 @@ index_cons_h30590 = pd.read_excel(index_cons_dir + 'h30590cons.xls') # 机器人
 # index_cons_h30590 = index_cons_h30590['成分券代码\nConstituent Code']
 # print(index_cons_h30590)
 
-index_cons_000964 = index_cons_000964['成分券代码\nConstituent Code']
+
+# =================  处理000964中证新兴  ==================     #
+index_code_000964 = index_cons_000964['成分券代码\nConstituent Code']
 # print(index_cons_000964)
 
-all_stock_basic = ts.get_stock_basics()
-print(all_stock_basic)
-# basic_000964 = all_stock_basic[]
+ind_all = ts.get_industry_classified()
+ind_all = ind_all.convert_objects(convert_numeric=True)
+# ind_all.dtypes
+# 全部98只中证新兴成分股信息ind_emerging
+ind_emerging = ind_all[ind_all['code'].isin(index_code_000964)]
+
+
 
 
